@@ -284,7 +284,7 @@ curl -X POST \
 
 You should pass the `brandId` of the Brand you wish to submit the offer to in the URL path and your API secret key as an HTTP header. The offer parameters should be formatted in JSON in the payload.
 
-As required parameters, you need to set an offer `name`, your `accountId` as the `publisherId`, a `startDate` at least three weeks from today, the type of offer between `amount` or `discount`, an offer `value`, and the `countryCode` where the offer will be available. The `value` is a percentage if the offer `type` is `discount` or a fixed amount in the local currency of the `countryCode` specified.
+As required parameters, you need to set an offer `name`, your `accountId` as the `publisherId` (get your accountId checking the raw objects in the Dashboard), a `startDate` at least three weeks from today, the type of offer between `amount` or `discount`, an offer `value`, and the `countryCode` where the offer will be available. The `value` is a percentage if the offer `type` is `discount` or a fixed amount in the local currency of the `countryCode` specified.
 
 Check out the [Offer API Reference](https://reference.fidel.uk/v1/reference#create-offer) for more detailed documentation about available Offer API endpoints.
 
