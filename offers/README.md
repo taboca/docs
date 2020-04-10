@@ -267,18 +267,19 @@ See below an example on how to create an offer using the Create Offer endpoint:
 
 ```sh
 curl -X POST \
-  https://api.fidel.uk/v1/brands/4ed4b62b-aa4c-43a1-8064-da6d1368e17b/offers \
-  -H 'content-type: application/json' \
-  -H 'fidel-key: sk_live_152c2c3c-3bc1-49af-84e2-82646f303c13' \
-  -d '{
-        "countryCode": "GBR",
-        "name":"20% Off Everything",
-        "publisherId":"4ed4b62b-aa4c-43a1-8064-nb7d1368e17a",
-        "startDate":"2018-10-20T12:12:00.000Z",
-        "type":{
-            "name":"discount",
-            "value":20
-         }
+ https://api.fidel.uk/v1/offers \
+ -H 'content-type: application/json' \
+ -H 'fidel-key: sk_live_152c2c3c-3bc1-49af-84e2-82646f303c13' \
+ -d '{
+       "countryCode": "GBR",
+       "name":"20% Off Everything",
+       "publisherId":"4ed4b62b-aa4c-43a1-8064-nb7d1368e17a",
+       "brandId":"4ed4b62b-aa4c-43a1-8064-da6d1368e17b",
+       "startDate":"2018-10-20",
+       "type":{
+         "name":"discount",
+         "value":20
+       }
      }'
 ```
 
