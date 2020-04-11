@@ -284,7 +284,7 @@ curl -X POST \
      }'
 ```
 
-To ensure security, your secret API key should be passed as the element "fidel-key" in the HTTP header — check more about authentication and keys at [API Reference]. All the offer parameters should be formatted in JSON in the payload.
+To ensure security, your secret API key should be passed as the element "fidel-key" in the HTTP header — check more about authentication and keys at [API Reference - authentication](https://reference.fidel.uk/reference#authentication). All the offer parameters should be formatted in JSON in the payload.
 
 As required parameters, you need to set the `brandId`, an offer `name`, your `accountId` as the `publisherId` (get your accountId checking the raw objects in the Dashboard), a `startDate` at least three weeks from today, the type of offer between `amount` or `discount`, an offer `value`, and the `countryCode` where the offer will be available. The `value` is a percentage if the offer `type` is `discount` or a fixed amount in the local currency of the `countryCode` specified.
 
